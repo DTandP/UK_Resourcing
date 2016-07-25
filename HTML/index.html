@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>UK Recruitment Desk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	 <script>
+	
+	 /*
+	 function checkContents()
+	 {
+		  var div2 = document.getElementById("newpost");
+		  if (div2.style.display !== "none") 
+			{
+				div2.style.display ="none";
+			}
+	 }*/
+     function setInitalSession()
+     {
+
+ window.location.assign("chatarea.html");
+
+
+//Ajax call for setting the session
+ var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+console.log("New session set...");
+
+    }
+  };
+  xhttp.open("GET", "http://localhost:6789/api/initialDialogData?t=" + Math.random(), true);
+  xhttp.send();
+// End of Ajax call
+ }
+	 
+	
+	
+  </script>
+  
+</head>
+<body >
+	<div class="row">
+		<div class ="npcImage"></div>
+			<div class="intro-caption">
+				 <h2>Welcome to Recruitment Desk</h2>
+			</div>
+			<div class ="intro-content" id="content1">
+				<p>My name is Jessica! I will be really happy to assist you in originating a requisition.</p>
+				<!-- <a class="letsgo" href="chatarea.html"><button ></button></a>-->
+				 <a class="letsgo" onclick="setInitalSession()" id="goButtton"><button ></button></a>
+			</div>
+	</div>
+	
+		<!-- <div class="intro-username" id="newpost">
+		<p>What Can I call you?</p>
+			<input type="text" name="firstname" value="Start typing.." id="submit">
+		</div> -->
+	
+</body>
+</html>

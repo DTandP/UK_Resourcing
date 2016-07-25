@@ -1,0 +1,335 @@
+Job  Family,Country,Job Level,Job Title
+Service Support,Global,6,Senior Service Analyst
+Service Support,Global,7,Service Analyst
+Service Support,Global,7,Technical Support Coordinator
+Service Support,Global,8,Junior Service Analyst
+Service Support,Global,8,Call Handler
+Project Management,Global,2B,Group Prog and Risk Director
+Project Management,Global,2B,Strategic Programme Director
+Project Management,Global,3,Programme Director
+Project Management,Global,4,Project Director
+Project Management,Global,4,Senior Project Manager
+Project Management,Global,5,Project Manager Client Sup
+Project Management,Global,5,Project Manager
+Project Management,Global,5,Project Support Office Manager
+Project Management,Global,6,Project Leader Client Support
+Project Management,Global,6,Project Leader
+Project Management,Global,7,Junior PMO
+Project Management,Global,8,Junior PMO Analyst
+Service Management,Global,2A,Delivery Director 2A
+Service Management,Global,2B,Delivery Director 2B
+Service Management,Global,3,Delivery Director 3
+Service Management,Global,3,Cost Centre Manager
+Service Management,Global,4,Senior Service Manager
+Service Management,Global,5,Service Manager
+Service Management,Global,6,Junior Service Manager
+Service Management,Global,6,Service Leader
+Service Management,Global,7,Service Administrator
+BPS - Business Process Service,Global,2B,Group Head of Service Line BPO
+BPS - Business Process Service,Global,3,BPS Delivery Director
+BPS - Business Process Service,Global,5,BPS Controller
+BPS - Business Process Service,Global,6,BPS Manager
+BPS - Business Process Service,Global,7,BPS Project Officer
+BPS - Business Process Service,Global,8,Process Assistant
+Consulting,Global,2A,Grp / Country Consulting Dir
+Consulting,Global,2B,Consultant 2B
+Consulting,Global,2B,Country Consulting Director
+Consulting,Global,3,Consultant Mgt 3
+Consulting,Global,3,Consulting Director
+Consulting,Global,4,Consulting Senior Manager
+Consulting,Global,4,Consultant Mgt 4
+Consulting,Global,5,Consultant AMOA Senior
+Consulting,Global,5,Consulting Manager
+Consulting,Global,6,Consultant AMOA Confirmé
+Consulting,Global,6,Senior Consultant
+Consulting,Global,7,Consultant AMOA
+Consulting,Global,7,Consultant
+Sales/Account Management,Global,0,Group Executive Sales Director
+Sales/Account Management,Global,2A,Country Sales Director
+Sales/Account Management,Global,2B,Snr Bus Development Director
+Sales/Account Management,Global,2B,Strategic Key Account Manager
+Sales/Account Management,Global,2B,Global Account Manager
+Service Support,Global,7,Service Improvement Analyst
+Project Management,Global,4,Senior Project Man Client Sup
+Project Management,Global,6,PMO
+BPS - Business Process Service,Global,4,Senior BPS Controller
+Consulting,Global,8,Junior Consultant
+Sales/Account Management,Global,3,Key Account Manager
+Sales/Account Management,Global,3,Business Development Director
+Sales/Account Management,Global,4,Senior Sales Manager
+Sales/Account Management,Global,4,Principal Sales Manager
+Sales/Account Management,Global,5,Sales Manager
+Sales/Account Management,Global,6,Sales Consultant
+Sales/Account Management,Global,8,Junior Sales Analyst
+Bid Management,Global,3,Bid Director
+Bid Management,Global,6,Bid Consultant
+Bid Management,Global,7,Bid Analyst
+P & L Management,Global,1,P and L Director level 1
+P & L Management,Global,2A,P and L Director level 2A
+P & L Management,Global,2B,P and L Director level 2B
+P & L Management,Global,3,P and L Director level 3
+P & L Management,Global,4,P and L Manager
+P & L Management,Global,7,Senior Resource Administrator
+P & L Management,Global,8,Graduate Trainee
+P & L Management,Global,8,Resource Administrator
+Sopra Steria Recruitment,Global,4,Sales Manager - Steria Recruit
+Sopra Steria Recruitment,Global,4,Senior Resource Manager-Steria
+Sopra Steria Recruitment,Global,5,SeniorSalesExec -Steria Recrui
+Sopra Steria Recruitment,Global,5,Information Manager -SteriaRec
+Sopra Steria Recruitment,Global,5,Client Contracts Impln Mgr-SR
+Sopra Steria Recruitment,Global,6,Senior Resourcer -Steria Recr
+Sopra Steria Recruitment,Global,6,Information Specialist - 2
+Sopra Steria Recruitment,Global,6,Principal Resourcer-SteriaRec
+Sopra Steria Recruitment,Global,6,Bid Support Specialist-SteriRe
+Sopra Steria Recruitment,Global,7,Client Resourcer - Steria Recr
+Sopra Steria Recruitment,Global,7,Sales Executive - Steria Recru
+Procurement,Global,2B,Group Procurement Director
+Procurement,Global,4,Head of Procurement 4
+Architecture,Global,5,Senior Technical Architect
+Architecture,Global,6,Solutions Architect
+Architecture,Global,6,Technical Architect
+Architecture,Global,7,Architect
+App Man and App Dev,Global,2B,Group Head of Delivery - AM
+App Man and App Dev,Global,3,Area Head of Agency - AM
+App Man and App Dev,Global,3,Area Head of Delivery - AM
+App Man and App Dev,Global,3,Area Head of Service Line - AM
+App Man and App Dev,Global,4,Principal Client Manager - AM
+App Man and App Dev,Global,4,Principal Software Engineer
+App Man and App Dev,Global,5,Test Architect
+App Man and App Dev,Global,5,Delivery Manager - AM
+App Man and App Dev,Global,5,Lead DBA - AM
+App Man and App Dev,Global,5,Senior Client Manager - AM
+App Man and App Dev,Global,6,Senior Business Analyst
+App Man and App Dev,Global,6,Client Manager - AM
+App Man and App Dev,Global,6,Senior DBA - AM
+App Man and App Dev,Global,6,Test Team Leader - AM
+App Man and App Dev,Global,6,Senior Test Engineer - AM
+App Man and App Dev,Global,7,Software Design Engineer
+App Man and App Dev,Global,7,Business Analyst
+App Man and App Dev,Global,8,Junior Software Engineer
+App Man and App Dev,Global,8,Junior Test Engineer
+App Man and App Dev,Global,8,Junior Systems Analyst
+Infrastructure Management,Global,2B,Group Head of Agency - IM
+Infrastructure Management,Global,3,Area Head of Agency - IM
+Infrastructure Management,Global,4,Snr Shared Service Mngr - IM
+Infrastructure Management,Global,6,Incident Manager
+Infrastructure Management,Global,6,Senior Infrastructure Engineer
+Infrastructure Management,Global,6,Production Engineer
+Infrastructure Management,Global,6,Client Manager - IM
+Infrastructure Management,Global,7,Test Engineer - IM
+Infrastructure Management,Global,7,Senior Operator
+Infrastructure Management,Global,7,Operator / Analyst
+Infrastructure Management,Global,7,Infrastructure Engineer
+Infrastructure Management,Global,8,Junior infrastructure engineer
+Infrastructure Management,Global,8,Junior Network Engineer
+Service Support,Global,6,Lead Service Analyst
+Procurement,Global,4,Senior Purchasing Manager
+Procurement,Global,5,Procurement Manager
+Procurement,Global,5,Category Manager
+Procurement,Global,6,Senior Buyer
+Procurement,Global,6,Buyer
+Procurement,Global,7,Procurement Analyst
+Procurement,Global,7,Senior Procurement Admin
+Procurement,Global,8,Procurement Administrator
+Facilities,Global,4,Head Property and Facilities
+Facilities,Global,5,Regional Facilities Manager
+Facilities,Global,5,Property & Infrastructure Man
+Facilities,Global,6,Facilities Manager
+Facilities,Global,7,Senior Facilities Admin
+Facilities,Global,7,Switchboard Supervisor
+Facilities,Global,8,Switchboard Operator
+Facilities,Global,8,Facilities Administrator
+Facilities,Global,8,Facilities Receptionist
+Legal,Global,2A,Group Legal Director
+Legal,Global,2B,Legal Director 2B
+Legal,Global,3,Legal Director 3
+Legal,Global,3,Senior Legal Manager
+Legal,Global,4,Legal Manager
+Legal,Global,4,Senior Legal Adviser
+Legal,Global,5,Legal Adviser 5
+Legal,Global,6,Legal Adviser 6
+Legal,Global,7,Legal Adviser 7
+Legal,Global,8,Legal Advisor 8
+Assistants,Global,6,Executive Assistant
+Assistants,Global,6,Personal Assistant
+Assistants,Global,7,Senior Admin Assistant
+Assistants,Global,7,Department Assistant
+Assistants,Global,7,Secretary
+Assistants,Global,8,Administrative Assistant
+Operations and Quality,Global,2A,Operation and Quality Director
+Operations and Quality,Global,2B,Oper. and Quality Director 2B
+Operations and Quality,Global,3,Operational Risk Leader
+Operations and Quality,Global,4,Senior Security Manager
+Operations and Quality,Global,4,Operational Risk Manager
+Operations and Quality,Global,4,Area Assessment and Cert. Lead
+Operations and Quality,Global,4,Quality Process Manager
+Operations and Quality,Global,5,Security Manager
+Operations and Quality,Global,5,Quality Assurance Manager
+Operations and Quality,Global,5,Delivery Quality Manager
+Operations and Quality,Global,6,Quality Specialist
+Operations and Quality,Global,6,Process Analyst
+Operations and Quality,Global,7,Quality Analyst
+Operations and Quality,Global,8,Junior Quality Analyst
+Finance,Global,1,Country CFO 1
+Finance,Global,2A,Consol Accts and Crtl Director
+Finance,Global,2A,Country CFO 2A
+Finance,Global,2A,Invester Relations Director
+Finance,Global,2A,Group Finance Domain Director
+Finance,Global,2A,Corporate Finance Director
+Finance,Global,2B,Commercial Director
+Finance,Global,2B,Chief Controller
+Finance,Global,2B,Country CFO 2B
+Finance,Global,3,Commercial Develop Director
+Finance,Global,3,Area Chief Finance Domain
+Finance,Global,3,Country CFO 3
+Finance,Global,3,Group Head of Accounting
+Finance,Global,3,Group Head of Treasury
+Finance,Global,3,Snr Sector Commercial Manager
+Finance,Global,3,Group Head of Finance domain
+Finance,Global,3,Accounting - Chief Accountant
+Finance,Global,3,Controlling-Chief Controller 3
+Finance,Global,3,Grp Interal Crtl and Audit Man
+Finance,Global,4,Sector Commercial Manager
+Finance,Global,4,Commercial Senior Manager
+Finance,Global,4,Commercial Development Manager
+Finance,Global,4,Accounting Senior specialist
+Finance,Global,4,Controlling Senior specialist
+Finance,Global,4,Acct-Head of Acct and Consol
+Finance,Global,5,Commercial Manager
+Finance,Global,5,Accounting - Accounting Mgr
+Finance,Global,5,Controlling Manager
+Finance,Global,5,Finance Domain Manager
+Finance,Global,6,Commercial Consultant
+Finance,Global,6,Accounting - Domain Specialist
+Finance,Global,6,Accounting - Senior Accountant
+Finance,Global,6,Accounting - Accounting Exe
+Finance,Global,6,Controlling  domain specialist
+Finance,Global,7,Accounting Analyst
+Finance,Global,7,Controlling Analyst
+Finance,Global,8,Accounting Administrator
+Finance,Global,8,Controlling  Administrator
+Marketing/Communications,Global,2A,Group Communications Director
+Marketing/Communications,Global,2A,Marketing Director 2A
+Marketing/Communications,Global,2B,Marketing / Comms Director 2B
+Marketing/Communications,Global,3,Marketing / Comms Director 3
+Marketing/Communications,Global,4,Senior Marketing  Manager
+Marketing/Communications,Global,4,Senior Marketing Manager
+Marketing/Communications,Global,4,Senior Communications Manager
+Marketing/Communications,Global,5,Senior Marketing Consultant
+Marketing/Communications,Global,5,SeniorCommunicationsConsultant
+Marketing/Communications,Global,6,Marketing Consultant
+Marketing/Communications,Global,6,Communications Consultant
+Marketing/Communications,Global,7,Marketing Specialist
+Marketing/Communications,Global,7,Communications Specialist
+Marketing/Communications,Global,8,Junior Marketing/Comms Spec
+Human Resources,Global,0,Group HR Director
+Human Resources,Global,1,Group HR Director 1
+Human Resources,Global,2A,HR Director 2A
+Human Resources,Global,2B,HR Director 2B
+Human Resources,Global,3,HR Director 3
+Human Resources,Global,3,Head of HR Domain
+Human Resources,Global,4,HR Manager
+Human Resources,Global,4,HR Business Partner 4
+Human Resources,Global,5,HR Business Partner 5
+Human Resources,Global,5,HR Specialist
+Human Resources,Global,6,Senior HR Advisor
+Human Resources,Global,6,HR Business Partner 6
+Human Resources,Global,7,HR Adviser
+Human Resources,Global,8,HR Administrator
+Testing,Global,2B,Grp Head of Service Line Test
+Testing,Global,3,Area Head of Service Line Test
+Testing,Global,4,Senior Delivery Manager Test
+Testing,Global,5,Senior Test Manager
+Testing,Global,6,Senior Test Analyst
+Testing,Global,7,Test Analyst
+Testing,Global,8,Junior Test Analyst
+Sales/Account Management,Global,4,Principal Account Manager
+Sales/Account Management,Global,5,Senior Sales Consultant
+Sales/Account Management,Global,7,Sales Analyst
+Bid Management,Global,4,Senior Bid Manager
+Bid Management,Global,5,Bid Manager
+P & L Management,Global,0,SEVP
+P & L Management,Global,0,CEO India
+P & L Management,Global,4,Resourcing Business Partner 4
+P & L Management,Global,5,P and L support Manager
+P & L Management,Global,5,Resourcing Business Partner 5
+P & L Management,Global,6,Resourcing Specialist
+P & L Management,Global,7,Senior Graduate
+Sopra Steria Recruitment,Global,5,Bid Manager -Steria Recruitmet
+Sopra Steria Recruitment,Global,6,Information Specialist - 1
+Sopra Steria Recruitment,Global,6,Account Manager - Steria Recru
+Sopra Steria Recruitment,Global,7,ContractsSpecialist -SteriaRe
+Procurement,Global,3,Head of Procurement 3
+Architecture,Global,3,Enterprise Architect
+Architecture,Global,4,Principal Solutions Architect
+Architecture,Global,4,Principal Technical Architect
+Architecture,Global,5,Senior Solutions Architect
+App Man and App Dev,Global,2B,Group Head of Agency - AM
+App Man and App Dev,Global,2B,Group Head of Service Line-AM
+App Man and App Dev,Global,3,Shared Service Director - AM
+App Man and App Dev,Global,4,Senior Delivery Manager - AM
+App Man and App Dev,Global,4,Snr Shared Service Mngr - AM
+App Man and App Dev,Global,5,Lead Software Engineer
+App Man and App Dev,Global,6,Senior Test Specialist
+App Man and App Dev,Global,6,Snr Software Design Engineer
+App Man and App Dev,Global,6,Senior Software Engineer
+App Man and App Dev,Global,7,Software Engineer
+App Man and App Dev,Global,7,Systems Analyst
+App Man and App Dev,Global,7,Support Analyst
+App Man and App Dev,Global,7,DBA - AM
+App Man and App Dev,Global,7,Test Engineer - AM
+App Man and App Dev,Global,7,Test Specialist
+Infrastructure Management,Global,2B,Group Head of Delivery - IM
+Infrastructure Management,Global,2B,Grp Head of Service Line - IM
+Infrastructure Management,Global,3,Area Head of Delivery - IM
+Infrastructure Management,Global,3,Area Head of Service Line - IM
+Infrastructure Management,Global,3,Shared Service Director - IM
+Infrastructure Management,Global,4,Senior Delivery Manager - IM
+Infrastructure Management,Global,4,Principal Client Manager - IM
+Infrastructure Management,Global,5,Lead Infrastructure Engineer
+Infrastructure Management,Global,5,Lead DBA - IM
+Infrastructure Management,Global,5,Test Manager - IM
+Infrastructure Management,Global,5,Delivery Manager - IM
+Infrastructure Management,Global,5,Lead Network Engineer
+Infrastructure Management,Global,5,Senior Client Manager - IM
+Infrastructure Management,Global,6,Senior DBA - IM
+Infrastructure Management,Global,6,Team Leader
+Infrastructure Management,Global,6,Process Owner
+Infrastructure Management,Global,6,Senior Network Engineer
+Infrastructure Management,Global,6,Infrastructure Administrator
+Infrastructure Management,Global,6,Senior Infra Support Analyst
+Infrastructure Management,Global,7,Infrastructure Support Analyst
+Infrastructure Management,Global,7,DBA - IM
+Infrastructure Management,Global,7,Deputy Team Leader
+Infrastructure Management,Global,7,Network Engineer
+Infrastructure Management,Global,8,Operator
+Infrastructure Management,Global,8,Junior Operator
+Service Support,Global,5,Service Support Manager
+Service Support,Global,6,Service Support Team Leader
+Service Support,Global,8,System Change Administrator
+BPS - Business Process Service,Global,2B,BPS Director
+BPS - Business Process Service,Global,2B,Group Head of Agency - BPO
+BPS - Business Process Service,Global,2B,Group Head of Delivery - BPO
+BPS - Business Process Service,Global,3,Area Head of Agency - BPO
+BPS - Business Process Service,Global,3,Area Head of Delivery - BPO
+BPS - Business Process Service,Global,3,Area Head of Service Line BPO
+BPS - Business Process Service,Global,4,Senior BPS Project Manager
+BPS - Business Process Service,Global,5,BPS Project Manager
+BPS - Business Process Service,Global,6,Process Leader
+BPS - Business Process Service,Global,6,BPS Project Leader
+BPS - Business Process Service,Global,7,Process Team Leader
+BPS - Business Process Service,Global,7,Process SME
+BPS - Business Process Service,Global,7,Process Officer
+BPS - Business Process Service,Global,8,Driver
+App Man and App Dev,Global,6,Senior Systems Analyst
+App Man and App Dev,Global,6,Senior Support Analyst
+Infrastructure Management,Global,5,Lead Support Analyst
+Infrastructure Management,Global,6,Test Team Leader - IM
+Infrastructure Management,Global,6,Senior Test Engineer - IM
+Human Resources,Global,3,HR Business Partner 3
+Testing,Global,5,Test Manager
+Testing,Global,5,Lead Technical Tester
+Testing,Global,6,Senior Technical Test Analyst
+Testing,Global,7,Technical Test Analyst
+Sales/Account Management,Global,4,Senior Account Manager
+P & L Management,Global,0,CEO (GM10)

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<title>UK Recruitment Desk</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js"></script>
+	<script type="text/javascript" src="date-en-IE.js"></script>
+	<script type="text/javascript" src="date.js"></script>
+
+
+
+	
+	<script>
+		
+var list_jobs=[];//Used for setting job list in new window for SecondQuestion
+
+var csv_data={};//stores CSV data in JSON form
+
+//Checks for categorizing the questions
+var isSecondQuestion=false;
+var isSecond2Question=false;
+var isFinalQuestion=false;
+
+
+	var count=1;
+	var temp;
+	$(document).ready(function(e){
+		
+d3.csv("../test.csv", function(data) {
+	csv_data=data;
+  console.log(csv_data);
+});
+
+		$("#callDialogs").click(triggerHandler);
+
+		/*$("#callDialogs").click(function(e){
+
+triggerHandler();
+		});*/
+		
+		$("#msgBlock").focus(function(e){
+			$("#msgBlock").val("");
+		});
+		
+	});
+
+
+
+
+
+//Creates a new window for displaying the list of jobs
+
+function myFunction(arr_list) {
+    var myWindow = window.open("", "MsgWindow", "width=600,height=1000");
+    
+myWindow.document.write("<h2>Here is the list of categories matching the profile you provided. Please copy the one of your choice in the chat window:-</h1><br><br>");
+
+myWindow.document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COUNTRY-->JOB FAMILY-->JOB LEVEL-->JOB TITLE<br><ol>");
+
+
+for(var i=0;i<arr_list.length;i++){
+
+
+
+	myWindow.document.write("<li><p>"+arr_list[i]+"</p></li>");
+
+
+
+
+}
+
+myWindow.document.write("</ol>");
+    
+
+
+}
+
+
+//Triggerhandler will be executed each time user hits send
+	function triggerHandler(){
+
+
+
+
+				console.log("Web client seeking the response from server...");
+			var msgBlock = document.getElementById('msgBlock').value;
+
+if(msgBlock.indexOf("-->")>-1){
+isSecond2Question=true;
+
+}
+
+
+if((msgBlock.search(/january/gi)>-1)||(msgBlock.search(/february/gi)>-1)||(msgBlock.search(/march/gi)>-1)||(msgBlock.search(/april/gi)>-1)||(msgBlock.search(/may/gi)>-1)||(msgBlock.search(/june/gi)>-1)||(msgBlock.search(/july/gi)>-1)||(msgBlock.search(/august/gi)>-1)||(msgBlock.search(/september/gi)>-1)||(msgBlock.search(/october/gi)>-1)||(msgBlock.search(/november/gi)>-1)||(msgBlock.search(/december/gi)>-1)){
+
+
+	isFinalQuestion=true;
+}
+
+
+var designation=msgBlock.split(" ").pop();//This variable will hold the designation
+
+console.log("User wants to recruit--> "+ designation);
+
+
+$("#container")[0].scrollTop = $("#container")[0].scrollHeight;
+			$("#container").append('<div class="user-chat"><p>'+msgBlock+'</p></div><br><br><br><br>').show('slow');
+$("#container")[0].scrollTop = $("#container")[0].scrollHeight;
+				
+
+
+for(var i=0;i<csv_data.length;i++){
+
+if((csv_data[i]["Job Title"].indexOf(designation))>-1)
+isSecondQuestion=true;
+
+
+
+}
+
+//Check for second question begins
+
+if(isSecondQuestion && !isSecond2Question && !isFinalQuestion){
+
+
+console.log("2nd question is being asked");
+
+
+/*$("#container").append('<div class="npc-chat"><div id="vinshu" class ="npcChatIcon"></div><p id="gupta">Please Select an item from the list below:-</p><ul></ul></div><br>').show('slow');
+*/
+//select all values which need to be shown on UI as list
+for(var j=0;j<csv_data.length;j++){
+
+if((csv_data[j]["Job Title"].indexOf(designation))>-1)
+{
+
+/*$("#container").append('<br><br>'+csv_data[j]["Job  Family"]+'-->'+csv_data[j]["Country"]+'-->'+csv_data[j]["Job Level"]+'-->'+csv_data[j]["Job Title"]+'<br><br>').show('slow');*/	
+
+//console.log("djasdjasdj");
+var field_name=(csv_data[j]["Job  Family"]+"-->"+csv_data[j]["Country"]+"-->"+csv_data[j]["Job Level"]+"-->"+csv_data[j]["Job Title"]).toString();
+
+list_jobs.push(field_name)
+
+
+
+console.log(csv_data[j]["Job  Family"]+"-->"+csv_data[j]["Country"]+"-->"+csv_data[j]["Job Level"]+"-->"+csv_data[j]["Job Title"]);
+
+
+}
+
+
+}
+myFunction(list_jobs);
+
+list_jobs=[];
+
+isSecondQuestion=false;
+
+}
+//Here update the job  field in dialog profile
+else if(isSecondQuestion && isSecond2Question && !isFinalQuestion){
+
+console.log("Third Question is being asked");
+
+$.get("http://localhost:6789/api/updateJobField?msg="+msgBlock+"&count="+count, function(responseText){
+				
+			
+
+			$("#container").append('<div class="npc-chat"><div class ="npcChatIcon"></div><p>'+responseText+'</p></div><br>').show('slow');
+
+			$("#container")[0].scrollTop = $("#container")[0].scrollHeight;
+			count = count +1;		
+			$("#msgBlock").val("");
+			
+			});
+
+
+
+isSecondQuestion=false;
+isSecond2Question=false;
+}
+
+
+//first question where user selects either Professional or executive
+
+else if(!isSecondQuestion && !isSecond2Question && isFinalQuestion){
+
+//alert("working");
+
+
+//START Date Code
+
+  var date = Date.parse(msgBlock);
+
+   // document.getElementById("result").innerHTML =  "<h4>entered date</h4>" + date.toString('dddd, MMMM d, yyyy');
+    var dayName= date.getDayName();
+	
+
+   
+  var finalDateOfJoining;
+ 
+  switch (dayName) {
+    case 'Monday': finalDateOfJoining = Date.parse(msgBlock).addDays(7);
+        break;
+    case 'Tuesday': finalDateOfJoining = Date.parse(msgBlock).addDays(13);
+        break;
+    case 'Wednesday':finalDateOfJoining = Date.parse(msgBlock).addDays(12);
+ break;
+    case 'Thursday': finalDateOfJoining = Date.parse(msgBlock).addDays(11);
+         break;
+    case 'Friday' : finalDateOfJoining = Date.parse(msgBlock).addDays(10);
+              break;
+    case 'Saturday': finalDateOfJoining = Date.parse(msgBlock).addDays(9);
+        break;
+    case 'Sunday' : finalDateOfJoining = Date.parse(msgBlock).addDays(8);
+        
+}
+
+var finalDate=finalDateOfJoining.toString('dddd, MMMM d, yyyy');
+ 
+  
+
+//Send the date to server for further processing if any
+
+$.get("http://localhost:6789/api/handleDate?fdoj="+finalDate+"&count="+count, function(responseText){
+				
+			
+
+			$("#container").append('<div class="npc-chat"><div class ="npcChatIcon"></div><p>'+responseText+'</p></div><br>').show('slow');
+
+			$("#container")[0].scrollTop = $("#container")[0].scrollHeight;
+			count = count +1;		
+			$("#msgBlock").val("");
+			
+			});
+
+//End of sending to server
+
+
+//End Date Code
+
+
+isFinalQuestion=false;
+}
+
+else{
+
+
+console.log("1st question is being asked");
+
+$.get("http://localhost:6789/api/textInputExecutiveProfessionalData?msg="+msgBlock+"&count="+count, function(responseText){
+				
+			
+
+			$("#container").append('<div class="npc-chat"><div class ="npcChatIcon"></div><p>'+responseText+'</p></div><br>').show('slow');
+
+			$("#container")[0].scrollTop = $("#container")[0].scrollHeight;
+			count = count +1;		
+			$("#msgBlock").val("");
+			
+			});
+
+}
+	}
+
+//handles the first question response through button press
+function firstCycle(type_of_category){
+
+console.log(type_of_category);
+
+	$.get("http://localhost:6789/api/buttonExecutiveProfessionalData?msg="+type_of_category+"&count="+count, function(responseText){
+				
+			
+
+		$("#container").append('<div class="npc-chat"><div class ="npcChatIcon"></div><p>'+responseText+'</p></div><br>').show('slow');
+
+			$("#container")[0].scrollTop = $("#container")[0].scrollHeight;	
+			count = count +1;	
+				$("#msgBlock").val("");
+			});
+
+
+}
+	</script>
+
+
+</head>
+<body >
+<!-- New section starts-->
+<section class="slider" id="about">
+				<div class="container-fluid">
+					<div class="row">
+						<img src="img/Bg_blue.jpg" alt=""/>
+							<div class="chat-window " id="container">
+							
+								<div class="npc-chat">
+								<div class ="npcChatIcon"></div>
+									<p>Which kind of candidate do you want to recruit?</p>
+									 <div class ="optionButtons">
+
+					  <button type="button" onclick="firstCycle('Professional')">Professional</button> 
+					 <button type="button" onclick="firstCycle('Executive')">Executive</button> 
+				 </div>
+								</div>
+							</div>
+							
+						<div class="chat-bar footer">
+									
+										<input name="usermsg" type="text" id="msgBlock" />
+										<button  name="submitmsg" id="callDialogs" >Send</button>
+									
+						</div>
+					</div>
+				</div>
+</section>
+
+</body>
+</html>
